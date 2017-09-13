@@ -89,3 +89,44 @@ colors: #f15d58 - red, #dbdecb - yellow-white
  	bottom: -100px;
  	left: 700px;
  }
+ #robot {
+ 	height: 400px;
+ 	width: 400px;
+ 	
+ 	position: absolute;
+ 	top: 100px;
+ 	left: 100px;
+ }
+@keyframes moveArm {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(20deg);}
+	100% {transform: rotate(0deg);}
+}
+#body {
+	position: absolute;
+	left: 20px;
+}
+#rightArm {
+	position: absolute;
+	top: 290px;
+	left: 230px;
+}
+#leftArm {
+	transform-origin: 100% 100%;
+	position: absolute;
+	top: 185px;
+	left: 40px;
+	animation: moveArm 5s ease-out;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -12,19 +12,35 @@
 	<div class="page" id="page2">
 		<div class="whiteClouds"></div>
 	</div>
-	<div class="middlesClouds">
+	<div class="middlesClouds"
+		data-start="top: 0px"
+		data-top-bottom="top: 150px"
+	>
 		<div class="mCloud" id="mCloud1"></div>
 		<div class="mCloud" id="mCloud2"></div>
 		<div class="mCloud" id="mCloud3"></div>
 	</div>
-	<div class="frontClouds">
+	<div class="frontClouds"
+		data-start="top: 0px; transform:rotate(0deg);"
+		data-top-bottom="top: 300px; transform:rotate(5deg);"
+	>
 		<div class="fCloud" id="fCloud1"></div>
 		<div class="fCloud" id="fCloud2"></div>
 		<div class="fCloud" id="fCloud3"></div>
 	</div>
+	<div id="robot">
+		<img id="rightArm" src="images/robbo_arm_right.png" alt="">
+		<img id="body" src="images/robbo_body.png" alt="">
+		<img id="leftArm" src="images/robbo_arm_left.png" alt="">
+	</div>
 	
-	<script src="scripts/main.js"></script>
-	<script>	
+	<script src="scripts/skrollr.min.js"></script>
+	<script>
+      var s = skrollr.init();
 	</script>
+
+
+	<script src="scripts/main.js"></script>
+	
 </body>
 </html>
